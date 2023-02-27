@@ -4,12 +4,15 @@
 
 </div>
 
-## 🍀 In this template
+## 🍀 Tools
 
-- support anonymous comment with [supabase](https://supabase.io/)
-- easy to edit contents
-- animation with [framer-motion](https://www.framer.com/motion/)
+- Node v16.13.0
+- [Supabase](https://supabase.io/)
+- [Vercel](https://vercel.com/):
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/SoYoung210/immutable.wedding)
+
+<!--  
 ## 🤖 Demo
 
 👉 [Default Template](https://immutable.wedding/)
@@ -33,13 +36,17 @@ Deploy your wedding log using [Vercel](https://vercel.com/):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/SoYoung210/immutable.wedding)
 
-## ❣️ Authors
+## ❣️ Authors -->
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+
+<!-- 
 <table>
   <tr>
    <td align="center"><a href="https://github.com/JaeYeopHan"><img src="https://avatars.githubusercontent.com/u/17924127?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jbee</b></sub></a><br />📆 🎨 💻
     <td align="center"><a href="https://so-so.dev"><img src="https://avatars0.githubusercontent.com/u/18658235?v=4?s=100" width="100px;" alt=""/><br /><sub><b>soso</b></sub></a><br />💻 🚇 📖
   </tr>
 </table>
+
+-->
