@@ -31,24 +31,24 @@
           }
         }
       ],
-      "description": "저희 결혼해요!\n2023년 8월 19일 토요일 오후 1시 정각\n라마다 서울 신도림 호텔 5F 세인트그레이스홀",
+      "description": "저희 결혼해요!\n2023년 8월 19일 토요일 오후 1시 정각",
+      "tags": ["신도림라마다호텔", "세인트그레이스홀(5F)"],
       "createdAt": "2023-02-27"
     },
     {
       "id": 2,
       "contents": [
         {
-          "imageSrc": "/assets/img/temp.jpg"
+          "imageSrc": "/assets/img/dress2_flowerhand_face_bg3.png"
         },
         {
-          "imageSrc": "/assets/img/temp.jpg"
+          "imageSrc": "/assets/img/dress2_chu.png"
         },
         {
-          "imageSrc": "/assets/img/temp.jpg"
+          "imageSrc": "/assets/img/dress2_wink_bg.png"
         }
       ],
-      "description": "피드 설명",
-      "tags": ["태그1", "태그2"]
+      "description": "주차는 1시간 30분까지 무료이니\n가능하면 대중교통을 이용해주세요.\n셔틀 안내"
     }
   ]
 }
