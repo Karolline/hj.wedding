@@ -11,8 +11,17 @@ export async function getComments(feedId: number) {
   const { data } = await api
     .from<Comment>('comments')
     .select('id, feedId, message, createAt')
-    .eq('feedId', feedId)
+    // .eq('feedId', feedId)
     .order('id', { ascending: false });
+
+  // const data = [
+  //   {
+  //   'id': '1',
+  //   'feedId': '999',
+  //   'message': 'test',
+  //   'createAt': '2023-02-07 18:19:00'
+  // }
+// ]
 
   return data;
 }

@@ -3,10 +3,10 @@
     {
       "id": 1,
       "name": "하이라이트1",
-      "thumbnailImageSrc": "/assets/img/temp.jpg",
+      "thumbnailImageSrc": "/assets/img/dress2_penguin.jpg",
       "contents": [{
         "id": 1,
-        "imageSrc": "/assets/img/temp.jpg",
+        "imageSrc": "/assets/img/dress2_penguin.png",
         "theme": "dark"
       }]
     },

@@ -70,7 +70,7 @@ export default function FeedsPage({ feeds, highlights }: Props) {
   return (
     <>
       <Header />
-      <HighlightSection highlights={highlights} />
+      {/* <HighlightSection highlights={highlights} /> */}
       <Feed feeds={feeds} />
       <Footer />
     </>
