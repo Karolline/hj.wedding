@@ -6,7 +6,7 @@
       "thumbnailImageSrc": "/assets/img/temp.jpg",
       "contents": [{
         "id": 1,
-        "imageSrc": "/assets/img/temp.png",
+        "imageSrc": "/assets/img/temp.jpg",
         "theme": "dark"
       }]
     },
