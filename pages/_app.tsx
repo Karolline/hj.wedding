@@ -43,13 +43,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           site_name: og.sitename,
           images: [
             {
-              url: '/assets/img/temp.jpg',
+              url: '/assets/img/deco2.JPG',
               width: 1200,
               height: 630,
               alt: og.title,
             },
             {
-              url: '/assets/img/temp.jpg',
+              url: '/assets/img/deco2.JPG',
               width: 800,
               height: 418,
               alt: og.title,
@@ -72,7 +72,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         ]}
       />
       <Head>
-        <meta name="theme-color" content="#0135DB" />
+        <meta name="theme-color" content="#ff9db7" />
         <meta name="viewport" content="width=device-width,user-scalable=no" />
       </Head>
       <NotificationProvider>

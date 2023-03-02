@@ -7,21 +7,76 @@
           "imageSrc": "/assets/img/dress1_wegotmarried.png",
           "action": {
             "type": "normal",
-            "text": "2023년 8월 19일 토요일 오후 1시",
+            "text": "💖",
             "color": "#ff9db7"
           }
-        },
+        }
+      ],
+      "description": "저희 결혼해요!\n2023년 8월 19일 토요일 오후 1시 정각",
+      "tags": ["CC", "여름결혼"],
+      "createdAt": "2023-02-27"
+    },
+    {
+      "id": 2,
+      "contents": [
         {
-          "imageSrc": "/assets/img/dress1_bigsmile.png",
+          "imageSrc": "/assets/img/dress2_flowerhand_face_bg3.png",
           "action": {
             "type": "link",
-            "text": "라마다 신도림 위치 안내",
-            "color": "#76bcfb",
+            "text": "오시는 길",
+            "color": "#f9b95e",
             "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
           }
         },
+        {
+          "imageSrc": "/assets/img/dress2_chu.png",
+          "action": {
+            "type": "link",
+            "text": "웨딩홀 오시는 길",
+            "color": "#f9b95e",
+            "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/dress2_wink_bg.png",
+          "action": {
+            "type": "link",
+            "text": "오시는 길",
+            "color": "#f9b95e",
+            "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
+          }
+        }
+      ],
+      "description": "신도림 라마다호텔\n세인트그레이스홀(5F)",
+      "tags": ["주차", "한시간반", "무료"]
+    },
+    {
+      "id": 3,
+      "contents": [
+        {
+          "imageSrc": "/assets/img/dress2_flowerhand_face_bg3.png",
+          "action": {
+            "type": "normal",
+            "text": "대절버스 타는곳",
+            "color": "#76bcfb",
+            "href": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh",
+            "mobileLink": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh",
+            "pcLink": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh"
+          }
+        }
+      ],
+      "description": "광주 비엔날레 주차장, 08시 정각",
+      "tags": ["전남", "72자3800"]
+    },
+    {
+      "id": 4,
+      "contents": [
         {
           "imageSrc": "/assets/img/deco1.png",
           "action": {
@@ -31,24 +86,7 @@
           }
         }
       ],
-      "description": "저희 결혼해요!\n2023년 8월 19일 토요일 오후 1시 정각",
-      "tags": ["신도림라마다호텔", "세인트그레이스홀(5F)"],
-      "createdAt": "2023-02-27"
-    },
-    {
-      "id": 2,
-      "contents": [
-        {
-          "imageSrc": "/assets/img/dress2_flowerhand_face_bg3.png"
-        },
-        {
-          "imageSrc": "/assets/img/dress2_chu.png"
-        },
-        {
-          "imageSrc": "/assets/img/dress2_wink_bg.png"
-        }
-      ],
-      "description": "주차는 1시간 30분까지 무료이니\n가능하면 대중교통을 이용해주세요.\n셔틀 안내"
+      "description": "내용설명"
     }
   ]
 }
