@@ -38,7 +38,7 @@ export function HighlightSection({ highlights }: Props) {
     >
       {highlights.map(({ id, ...highlight }, index) => {
         return (
-          <Link
+          <Link // 클릭하면
             key={id}
             href={{
               pathname: `/highlights/[id]`,

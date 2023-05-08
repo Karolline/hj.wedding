@@ -5,7 +5,7 @@ import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import { useRouter } from 'next/router';
 import { getPlaiceholder } from 'plaiceholder';
 
-import { Header } from '@pages/highlights/components/Header';
+import { CoverHeader } from '@pages/highlights/components/CoverHeader';
 import { useAccount } from '@hooks/data/useAccount';
 
 import { styled } from 'stitches.config';
@@ -18,6 +18,12 @@ async function fetchHighlights() {
   const highlightDatdaset = highlightJson.data as RawHighlightData[];
 
   return highlightDatdaset;
+}
+
+async function getRandomPhoto(imageSrcArray: Array<String>) {
+  const randomPhoto = imageSrcArray[Math.floor(Math.random() * imageSrcArray.length)]
+
+  return randomPhoto
 }
 
 export async function getStaticPaths() {
@@ -129,7 +135,7 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
     <div>잘못된 접근</div>
   ) : (
     <AnimatePresence initial={false}>
-      {backgroundContent != null ? (
+      {backgroundContent != null ? ( // 배경
         <ContentWrapper
           key={index + 1}
           imageContent={backgroundContent}
@@ -140,19 +146,21 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
             opacity: { duration: 0.4 },
           }}
         >
-          <Header
+          <CoverHeader
             thumbnailImage={highlight.thumbnailImage}
             onClose={router.back}
           >
             {account.name}
-          </Header>
+          </CoverHeader>
           <StyledMotionDiv
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
             <Image.Root>
-              <Image {...backgroundContent} width={520} height={520}>
+              <Image {...backgroundContent}
+              // width={520} height={520}
+              >
                 <Image.Source src={backgroundContent.src} alt="재여비" />
               </Image>
             </Image.Root>
@@ -160,7 +168,7 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
         </ContentWrapper>
       ) : null}
 
-      {대표_컨텐츠_이미지 != null ? (
+      {대표_컨텐츠_이미지 != null ? ( // 메인이미지
         <ContentWrapper
           key={index}
           imageContent={대표_컨텐츠_이미지}
@@ -174,23 +182,26 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
           setPrevToBackgroundContent={setPrevToBackgroundContent}
           setNextToBackgroundContent={setNextToBackgroundContent}
         >
-          <Header
-            thumbnailImage={highlight.thumbnailImage}
+          <CoverHeader
+            // thumbnailImage={highlight.thumbnailImage}
             onClose={router.back}
           >
-            {account.name}
-          </Header>
+            {/* {account.name} */}
+          </CoverHeader>
           <StyledMotionDiv
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
-            <Image.Root>
-              <Image {...대표_컨텐츠_이미지} width={520} height={520}>
+            <Image.Root id="Image_root_tag"> 
+              <Image {...대표_컨텐츠_이미지} id='Image_tag'
+              width={520} height={780}
+              >
                 <Image.Source src={대표_컨텐츠_이미지.src} alt="재여비" />
               </Image>
             </Image.Root>
           </StyledMotionDiv>
+
         </ContentWrapper>
       ) : null}
     </AnimatePresence>
@@ -198,5 +209,12 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
 }
 
 const StyledMotionDiv = styled(motion.div, {
-  marginTop: `calc(25vh - 68px)`,
+  // marginTop: `calc(25vh - 68px)`,
+  marginTop: `calc(10vh)`,
+  // [요건] 바닥에 딱붙이기
+  // verticalAlign: `middle`,
 });
+
+
+
+
