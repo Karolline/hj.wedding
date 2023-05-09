@@ -20,11 +20,11 @@ async function fetchHighlights() {
   return highlightDatdaset;
 }
 
-async function getRandomPhoto(imageSrcArray: Array<String>) {
-  const randomPhoto = imageSrcArray[Math.floor(Math.random() * imageSrcArray.length)]
+// async function getRandomPhoto(imageSrcArray: Array<String>) {
+//   const randomPhoto = imageSrcArray[Math.floor(Math.random() * imageSrcArray.length)]
 
-  return randomPhoto
-}
+//   return randomPhoto;
+// }
 
 export async function getStaticPaths() {
   const highlightDatdaset = await fetchHighlights();
@@ -158,9 +158,7 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
             transition={{ duration: 0.3 }}
           >
             <Image.Root>
-              <Image {...backgroundContent}
-              // width={520} height={520}
-              >
+              <Image {...backgroundContent}>
                 <Image.Source src={backgroundContent.src} alt="재여비" />
               </Image>
             </Image.Root>
@@ -193,15 +191,12 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
           >
-            <Image.Root id="Image_root_tag"> 
-              <Image {...대표_컨텐츠_이미지} id='Image_tag'
-              width={520} height={780}
-              >
+            <Image.Root>
+              <Image {...대표_컨텐츠_이미지} width={520} height={780}>
                 <Image.Source src={대표_컨텐츠_이미지.src} alt="재여비" />
               </Image>
             </Image.Root>
           </StyledMotionDiv>
-
         </ContentWrapper>
       ) : null}
     </AnimatePresence>
@@ -209,12 +204,5 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
 }
 
 const StyledMotionDiv = styled(motion.div, {
-  // marginTop: `calc(25vh - 68px)`,
   marginTop: `calc(10vh)`,
-  // [요건] 바닥에 딱붙이기
-  // verticalAlign: `middle`,
 });
-
-
-
-

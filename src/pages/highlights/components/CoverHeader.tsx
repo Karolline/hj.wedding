@@ -18,10 +18,8 @@ export function CoverHeader({
 }: PropsWithChildren<Props>) {
   return (
     <header>
-      <Flex.CenterVertical // 화면에서 가운데로 정렬
-      // css={{ py: '$12', px: '$18' }}
-      css={{ py: '$12', px: '$18'}}
-      >
+      {/* 화면에서 가운데로 정렬 */}
+      <Flex.CenterVertical css={{ py: '$12', px: '$18' }}>
         {/* <SImageRoot> 프로필사진
           <Image.RoundShape {...thumbnailImage} width={30} height={30}>
             <Image.Source src={thumbnailImage.src} alt="프로필_사진" />
@@ -30,9 +28,7 @@ export function CoverHeader({
 
         {/* {children} 계정이름 */}
 
-        <div>
-        전상빈 x 김혜진
-        </div>
+        <div>전상빈 김혜진</div>
 
         {/* x 버튼 */}
         <SButton type="button" onClick={onClose}>
