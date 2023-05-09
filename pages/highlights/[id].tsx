@@ -147,7 +147,7 @@ export default function HighlightPage({ highlight, highlightDataSet }: Props) {
           }}
         >
           <CoverHeader
-            thumbnailImage={highlight.thumbnailImage}
+            // thumbnailImage={highlight.thumbnailImage}
             onClose={router.back}
           >
             {account.name}
