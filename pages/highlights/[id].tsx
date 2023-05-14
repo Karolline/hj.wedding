@@ -36,12 +36,14 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
+// getStaticProps라는 함수를 export하면 함수에서 반환한 props를 사용하여 페이지를 빌드 시에 프리렌더링할 수 있습니다
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   const rawHighlightDataSet = await fetchHighlights();
 
   const highlightDataSet = await Promise.all(
     rawHighlightDataSet.map(async highlightData => {
       const { base64, img } = await getPlaiceholder(
+        //plaiceholder: 블러를 통해 빈 이미지 공간을 이미지가 렌더링 되도록 하는 라이브러리
         highlightData.thumbnailImageSrc
       );
 

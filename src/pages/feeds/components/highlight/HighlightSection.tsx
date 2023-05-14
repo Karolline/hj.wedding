@@ -1,3 +1,4 @@
+// 메인페이지 상단 하이라이트 리스트 헤더 부분
 import Gradient from '@components/gradient';
 import Image from '@components/image';
 import { Flex } from '@components/util/layout/Flex';
