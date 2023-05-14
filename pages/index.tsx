@@ -3,9 +3,10 @@ import { Highlight, RawHighlightData } from '@models/Highlight';
 import { Feed } from '@pages/feeds/components/feed/Feed';
 import { Footer } from '@pages/feeds/components/footer/Footer';
 import { Header } from '@pages/feeds/components/header/Header';
-import { HighlightSection } from '@pages/feeds/components/highlight/HighlightSection';
+// import { HighlightSection } from '@pages/feeds/components/highlight/HighlightSection';
 import { InferGetStaticPropsType } from 'next';
 import { getPlaiceholder } from 'plaiceholder';
+import { HighlightModal } from "@pages/feeds/components/feed/HighlightModal";
 
 export async function getStaticProps() {
   const [feedJson, highlightJson] = await Promise.all([
@@ -70,7 +71,8 @@ export default function FeedsPage({ feeds, highlights }: Props) {
   return (
     <>
       <Header />
-      <HighlightSection highlights={highlights} />
+      <HighlightModal />
+      {/* <HighlightSection highlights={highlights} /> */}
       <Feed feeds={feeds} />
       <Footer />
     </>
