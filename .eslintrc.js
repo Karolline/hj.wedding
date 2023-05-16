@@ -9,7 +9,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'prettier'],
   extends: [
     'eslint:recommended',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
@@ -19,6 +19,6 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'prettier/prettier': ["error", { "endOfLine": "auto" }]
+    // 'prettier/prettier': ["error", { "endOfLine": "auto" }]
   },
 };
