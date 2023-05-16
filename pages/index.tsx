@@ -7,6 +7,7 @@ import { Header } from '@pages/feeds/components/header/Header';
 import { InferGetStaticPropsType } from 'next';
 import { getPlaiceholder } from 'plaiceholder';
 import { HighlightModal } from "@pages/feeds/components/feed/HighlightModal";
+import React, { useState } from 'react';
 
 export async function getStaticProps() {
   const [feedJson, highlightJson] = await Promise.all([

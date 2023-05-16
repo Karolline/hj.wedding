@@ -20,12 +20,6 @@ async function fetchHighlights() {
   return highlightDatdaset;
 }
 
-// async function getRandomPhoto(imageSrcArray: Array<String>) {
-//   const randomPhoto = imageSrcArray[Math.floor(Math.random() * imageSrcArray.length)]
-
-//   return randomPhoto;
-// }
-
 export async function getStaticPaths() {
   const highlightDatdaset = await fetchHighlights();
 
