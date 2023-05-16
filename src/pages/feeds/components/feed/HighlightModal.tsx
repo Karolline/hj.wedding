@@ -7,7 +7,7 @@ import { getRandomNumberInRange } from '@utils/getRandomNumberInRange';
 
 const 표지_이미지_넘버 = getRandomNumberInRange({ min: 1, max: 6 });
 
-export function HighlightModal({}) {
+export function HighlightModal() {
 
   // const [isVisible, makeVisible, makeInvisible] = useBooleanState(true);
   const [isVisible, setIsVisible] = useState(true);
