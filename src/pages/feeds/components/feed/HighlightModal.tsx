@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useLockBodyScroll } from '@hooks/useBodyScrollLock';
 import React, { useCallback, useState } from 'react';
 
-export function HighlightModal(props) {
+export function HighlightModal(props: any) {
   
   // const [isVisible, makeVisible, makeInvisible] = useBooleanState(true);
   const [isVisible, setIsVisible] = useState(true);
