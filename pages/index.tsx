@@ -8,6 +8,7 @@ import { InferGetStaticPropsType } from 'next';
 import { getPlaiceholder } from 'plaiceholder';
 import { HighlightModal } from "@pages/feeds/components/feed/HighlightModal";
 import React, { useState } from 'react';
+import { getRandomNumberInRange } from '@utils/getRandomNumberInRange';
 
 export async function getStaticProps() {
   const [feedJson, highlightJson] = await Promise.all([
@@ -63,16 +64,24 @@ export async function getStaticProps() {
     highlightPromises,
   ]);
 
-  return { props: { feeds, highlights } };
-}
+  const 표지_이미지_넘버 = getRandomNumberInRange({ min: 1, max: 6 });
+  const 표지_이미지_소스 = '/assets/img/highlight_'+표지_이미지_넘버+'.png'
+  const {base64, img} = await getPlaiceholder(표지_이미지_소스)
+  const 표지_이미지_객체 = {
+    'imgSrc': 표지_이미지_소스,
+    'blurDataURL': base64
+  }
+
+  return { props: { feeds, highlights, 표지_이미지_소스 } };
+} 
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
-export default function FeedsPage({ feeds, highlights }: Props) {
+export default function FeedsPage({ feeds, highlights, 표지_이미지_소스 }: Props) {
   return (
     <>
       <Header />
-      <HighlightModal />
+      <HighlightModal 표지_이미지_소스={표지_이미지_소스}/>
       {/* <HighlightSection highlights={highlights} /> */}
       <Feed feeds={feeds} />
       <Footer />
