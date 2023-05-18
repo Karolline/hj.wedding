@@ -35,33 +35,33 @@ export async function getStaticProps() {
     })
   );
 
-  const highlightPromises = Promise.all(
-    highlightDatdaset.map(async highlight => {
-      const { base64, img } = await getPlaiceholder(
-        highlight.thumbnailImageSrc,
-        {
-          size: 24,
-        }
-      );
-      const contents = await Promise.all(
-        highlight.contents.map(async content => {
-          const { base64, img } = await getPlaiceholder(content.imageSrc);
+  // const highlightPromises = Promise.all(
+  //   highlightDatdaset.map(async highlight => {
+  //     const { base64, img } = await getPlaiceholder(
+  //       highlight.thumbnailImageSrc,
+  //       {
+  //         size: 24,
+  //       }
+  //     );
+  //     const contents = await Promise.all(
+  //       highlight.contents.map(async content => {
+  //         const { base64, img } = await getPlaiceholder(content.imageSrc);
 
-          return { ...content, image: { ...img, blurDataURL: base64 } };
-        })
-      );
+  //         return { ...content, image: { ...img, blurDataURL: base64 } };
+  //       })
+  //     );
 
-      return {
-        ...highlight,
-        thumbnailImage: { ...img, blurDataURL: base64 },
-        contents,
-      } as Highlight;
-    })
-  );
+  //     return {
+  //       ...highlight,
+  //       thumbnailImage: { ...img, blurDataURL: base64 },
+  //       contents,
+  //     } as Highlight;
+  //   })
+  // );
 
-  const [feeds, highlights] = await Promise.all([
+  const [feeds] = await Promise.all([
     feedsPromises,
-    highlightPromises,
+    // highlightPromises,
   ]);
 
   const 표지_이미지_넘버 = getRandomNumberInRange({ min: 1, max: 6 });
@@ -72,12 +72,12 @@ export async function getStaticProps() {
     'blurDataURL': base64
   }
 
-  return { props: { feeds, highlights, 표지_이미지_소스 } };
+  return { props: { feeds,  표지_이미지_소스 } };
 } 
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
-export default function FeedsPage({ feeds, highlights, 표지_이미지_소스 }: Props) {
+export default function FeedsPage({ feeds,  표지_이미지_소스 }: Props) {
   const [modalOpen, setModalOpen] = useState(true);
   return (
     <>
