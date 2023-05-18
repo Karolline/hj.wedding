@@ -52,6 +52,6 @@ const StyledMotionDiv = styled(motion.div, {
   // marginTop: `calc(10vh)`,
   position: `absolute`,
   // display: `block`,
-  zIndex: 1,
+  zIndex: '$max1',
   // overflow: `hidden`
 });
