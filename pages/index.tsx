@@ -78,10 +78,11 @@ export async function getStaticProps() {
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export default function FeedsPage({ feeds, highlights, 표지_이미지_소스 }: Props) {
+  const [modalOpen, setModalOpen] = useState(true);
   return (
     <>
       <Header />
-      <HighlightModal 표지_이미지_소스={표지_이미지_소스}/>
+      { modalOpen && <HighlightModal 표지_이미지_소스={표지_이미지_소스} modalOpen={modalOpen} setModalOpen={setModalOpen}/> }
       {/* <HighlightSection highlights={highlights} /> */}
       <Feed feeds={feeds} />
       <Footer />
