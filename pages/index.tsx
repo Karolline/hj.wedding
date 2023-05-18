@@ -64,25 +64,21 @@ export async function getStaticProps() {
     // highlightPromises,
   ]);
 
-  const 표지_이미지_넘버 = await getRandomNumberInRange({ min: 1, max: 6 });
-  const 표지_이미지_소스 = await '/assets/img/highlight_'+표지_이미지_넘버+'.png'
-  const {base64, img} = await getPlaiceholder(표지_이미지_소스)
-
-  return { props: { feeds,  표지_이미지_소스, imageProps: {...img, blurDataURL: base64} } };
+  return { props: { feeds } };
 } 
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 
 
-export default function FeedsPage({ feeds,  표지_이미지_소스, imageProps }: Props) {
+export default function FeedsPage({ feeds }: Props) {
   const [modalOpen, setModalOpen] = useState(true);
 
   // console.log(imageProps)
 
   return (
     <>
-    { modalOpen && <HighlightModal 표지_이미지_소스={표지_이미지_소스} modalOpen={modalOpen} setModalOpen={setModalOpen} imageProps={imageProps}/> }
+    { modalOpen && <HighlightModal modalOpen={modalOpen} setModalOpen={setModalOpen} /> }
 
     { !modalOpen && 
     <>
