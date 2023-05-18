@@ -64,28 +64,32 @@ export async function getStaticProps() {
     // highlightPromises,
   ]);
 
-  const 표지_이미지_넘버 = getRandomNumberInRange({ min: 1, max: 6 });
-  const 표지_이미지_소스 = '/assets/img/highlight_'+표지_이미지_넘버+'.png'
+  const 표지_이미지_넘버 = await getRandomNumberInRange({ min: 1, max: 6 });
+  const 표지_이미지_소스 = await '/assets/img/highlight_'+표지_이미지_넘버+'.png'
   const {base64, img} = await getPlaiceholder(표지_이미지_소스)
-  const 표지_이미지_객체 = {
-    'imgSrc': 표지_이미지_소스,
-    'blurDataURL': base64
-  }
 
-  return { props: { feeds,  표지_이미지_소스 } };
+  return { props: { feeds,  표지_이미지_소스, imageProps: {...img, blurDataURL: base64} } };
 } 
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
-export default function FeedsPage({ feeds,  표지_이미지_소스 }: Props) {
+
+
+export default function FeedsPage({ feeds,  표지_이미지_소스, imageProps }: Props) {
   const [modalOpen, setModalOpen] = useState(true);
+
+  // console.log(imageProps)
+
   return (
     <>
+    { modalOpen && <HighlightModal 표지_이미지_소스={표지_이미지_소스} modalOpen={modalOpen} setModalOpen={setModalOpen} imageProps={imageProps}/> }
+
+    { !modalOpen && 
+    <>
       <Header />
-      { modalOpen && <HighlightModal 표지_이미지_소스={표지_이미지_소스} modalOpen={modalOpen} setModalOpen={setModalOpen}/> }
-      {/* <HighlightSection highlights={highlights} /> */}
       <Feed feeds={feeds} />
-      <Footer />
+      <Footer /> 
+    </>}
     </>
   );
 }
