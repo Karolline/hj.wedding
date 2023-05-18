@@ -89,8 +89,8 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
             <Image.Root>
 
               <Image width={520} height={780}
-              placeholder="blur"
-              blurDataURL={표지_이미지_블러}
+              // placeholder="blur"
+              // blurDataURL={표지_이미지_블러} // backgroundImage를 blur로 하면 얘는 안하는게 자연스러움
               >
                 <Image.Source src={표지_이미지_소스} alt="재여비" />
               </Image>
@@ -112,7 +112,7 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
 }
 
 const StyledMotionDiv = styled(motion.div, {
-  marginTop: `calc(15vh)`,
+  // marginTop: `calc(10vh)`,
   position: `absolute`,
   zIndex: '$max1',
 });
