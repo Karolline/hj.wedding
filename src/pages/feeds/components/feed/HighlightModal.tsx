@@ -112,7 +112,7 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
 }
 
 const StyledMotionDiv = styled(motion.div, {
-  marginTop: `calc(25vh - 136px)`,
+  marginTop: `calc(25vh - 68px)`,
   position: `absolute`,
   zIndex: '$max1',
 });
