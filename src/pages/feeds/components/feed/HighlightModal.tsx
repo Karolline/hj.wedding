@@ -39,7 +39,7 @@ export function HighlightModal(props: any) {
     return () => {
       // const scrollY = document.body.style.top;
       // document.body.style.cssText = "";
-      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+      window.scrollTo(0, 0);
     };
   }, []);  // 빈 배열을 입력하는 경우 렌더링 될 때 마다 실행
 
