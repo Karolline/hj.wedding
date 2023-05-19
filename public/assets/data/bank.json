@@ -1,9 +1,15 @@
 {
   "title": "저희의 결혼을 축하해주세요 💖",
-  "description": "감사한 마음 잊지 않고 오랫동안 간직할게요.",
+  "description": "감사한 마음 잊지 않고 오랫동안 간직하겠습니다",
   "groom": [
     {
       "holderName": "전병도",
+      "bankName": "국민은행",
+      "accountNumber": "계좌번호",
+      "logo": "/assets/svg/kb.svg"
+    },
+    {
+      "holderName": "이덕주",
       "bankName": "국민은행",
       "accountNumber": "계좌번호",
       "logo": "/assets/svg/kb.svg"
@@ -19,13 +25,19 @@
     {
       "holderName": "김영준",
       "bankName": "농협",
-      "accountNumber": "계좌번호",
+      "accountNumber": "635044-52-118602",
       "logo": "/assets/svg/ibk.svg"
+    },
+    {
+      "holderName": "박점남",
+      "bankName": "국맨은행",
+      "accountNumber": "794601-01-038478",
+      "logo": "/assets/svg/kb.svg"
     },
     {
       "holderName": "김혜진",
       "bankName": "우리은행",
-      "accountNumber": "1002248155926",
+      "accountNumber": "1002-248-155926",
       "logo": "/assets/svg/kakaobank.svg"
     }
   ]
