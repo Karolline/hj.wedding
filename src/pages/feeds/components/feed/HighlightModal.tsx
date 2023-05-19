@@ -11,6 +11,7 @@ import {
   useMotionValue,
   useTransform,
 } from 'framer-motion';
+import CloseIcon from '@components/icon/Close';
 
 export function HighlightModal(props: any) {
   
@@ -80,6 +81,8 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
             width: '100%',
           }}
         >
+
+
           <StyledMotionDiv
             // initial={{ opacity: 0 }}
             // animate={{ opacity: 1 }}
@@ -87,7 +90,10 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
             onClick = {handleModalVisible}
           >
             <Image.Root>
-
+             {/* <SButton type="button"> x버튼 */}
+              {/* <CloseIcon /> */}
+              {/* </SButton>  */}
+              
               <Image width={520} height={780}
               // placeholder="blur"
               // blurDataURL={표지_이미지_블러} // backgroundImage를 blur로 하면 얘는 안하는게 자연스러움
@@ -134,4 +140,8 @@ const BackgroundMotionDiv = styled(motion.div, {
 
   backgroundSize: 'cover',
   height: '100%',
+});
+
+const SButton = styled('button', {
+  // ml: 'auto',
 });

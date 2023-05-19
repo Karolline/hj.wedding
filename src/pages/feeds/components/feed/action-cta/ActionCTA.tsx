@@ -8,16 +8,17 @@ type Props<ElementType extends keyof JSX.IntrinsicElements = 'div'> =
     Omit<React.AllHTMLAttributes<ElementType>, 'as'> & {
       as?: ElementType;
       backgroundColor: string;
-      children: ReactNode;
       isNormal: boolean;
+      children: ReactNode;
     } & CSSProps;
 
 export function ActionCTA<ElementType extends keyof JSX.IntrinsicElements>({
   as,
   backgroundColor,
+  isNormal,
   children,
   css,
-  isNormal,
+  
   ...props
 }: Props<ElementType>) {
   const Component = styled(as ?? 'div', {}) as any;

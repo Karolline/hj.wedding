@@ -26,9 +26,9 @@ export function FeedActionCTA({ action }: Props) {
       <ActionCTA
         as="button"
         backgroundColor={action.color}
+        isNormal={true}
         css={{ width: '100%' }}
         type="button"
-        isNormal={true}
       >
         {action.text}
       </ActionCTA>
@@ -40,6 +40,7 @@ export function FeedActionCTA({ action }: Props) {
       <ActionCTA
         as="a"
         backgroundColor={action.color}
+        isNormal={false}
         href={
           isMobileWeb
             ? action.mobileLink ?? action.href
@@ -47,7 +48,6 @@ export function FeedActionCTA({ action }: Props) {
         }
         target="_blank"
         rel="noopener noreferrer"
-        isNormal={false}
       >
         {action.text}
       </ActionCTA>
@@ -59,9 +59,9 @@ export function FeedActionCTA({ action }: Props) {
       <ActionCTA
         as="button"
         backgroundColor={action.color}
+        isNormal={false}
         css={{ width: '100%' }}
         type="button"
-        isNormal={false}
         onClick={() => {
           showNotification({
             element: <ToastWrapper>✅ {action.message}</ToastWrapper>,
@@ -82,5 +82,5 @@ export function FeedActionCTA({ action }: Props) {
     }
   }
 
-  return <ActionCTA backgroundColor={action.color}>{action.text}</ActionCTA>;
+  return <ActionCTA isNormal={true} backgroundColor={action.color}>{action.text}</ActionCTA>;
 }

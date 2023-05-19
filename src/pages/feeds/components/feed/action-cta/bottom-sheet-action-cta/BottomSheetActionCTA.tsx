@@ -12,6 +12,7 @@ export function BottomSheetActionCTA({ action, onClick }: Props) {
     <ActionCTA
       as="button"
       backgroundColor={action.color}
+      isNormal={false}
       css={{ width: '100%' }}
       type="button"
       onClick={onClick}
