@@ -99,7 +99,7 @@ function FeedItemContainer({
         </DescriptionWrapper>
       </div>
       <div className={css({ px: '$16' })()}>
-        <Author css={{ mr: '$12' }}>{account.name}</Author>
+        {/* <Author css={{ mr: '$12' }}>{account.name}</Author> */}
         <Description>{description}</Description>
         {tags != null ? <Tags values={tags} /> : null}
       </div>

@@ -27,21 +27,21 @@ export function HighlightModal(props: any) {
 
   // 스크롤 금지
   // useEffect: 리액트 컴포넌트가 랜더링 될 때마다 특정 작업을 수행하도록 설정할 수 있는 Hook
-  // useEffect(() => {
-  //   document.body.style.cssText = `
-  //     position: fixed; 
-  //     top: -${window.scrollY}px;
-  //     overflow-y: scroll;
-  //     width: 100%;
-  //     `;
+  useEffect(() => {
+    // document.body.style.cssText = `
+    //   position: fixed; 
+    //   top: -${window.scrollY}px;
+    //   overflow-y: scroll;
+    //   width: 100%;
+    //   `;
 
-  //     // effect 이후에 어떻게 정리(clean-up)할 것인지 표시
-  //   return () => {
-  //     const scrollY = document.body.style.top;
-  //     document.body.style.cssText = "";
-  //     window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
-  //   };
-  // }, []);  // 빈 배열을 입력하는 경우 렌더링 될 때 마다 실행
+      // effect 이후에 어떻게 정리(clean-up)할 것인지 표시
+    return () => {
+      // const scrollY = document.body.style.top;
+      // document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    };
+  }, []);  // 빈 배열을 입력하는 경우 렌더링 될 때 마다 실행
 
 
 /* Prop `style` did not match

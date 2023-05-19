@@ -72,7 +72,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         ]}
       />
       <Head>
-        <meta name="theme-color" content="#ff9db7" />
+        <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width,user-scalable=no" />
       </Head>
       <NotificationProvider>

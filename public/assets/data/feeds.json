@@ -4,26 +4,50 @@
       "id": 1,
       "contents": [
         {
-          "imageSrc": "/assets/img/dress1_wegotmarried.png",
+          "imageSrc": "/assets/img/EP2_0436-바른보정.jpg",
           "action": {
             "type": "normal",
-            "text": "💖",
+            "text": "저희 결혼해요💖",
+            "color": "#ff9db7"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/EP2_2350-바른보정.jpg",
+          "action": {
+            "type": "normal",
+            "text": "저희 결혼해요💖",
+            "color": "#ff9db7"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/김헤진님-6-에픽유보정.jpg",
+          "action": {
+            "type": "normal",
+            "text": "저희 결혼해요💖",
+            "color": "#ff9db7"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/김헤진님-14-EP2_4609_-내가보정.jpg",
+          "action": {
+            "type": "normal",
+            "text": "저희 결혼해요💖",
             "color": "#ff9db7"
           }
         }
       ],
-      "description": "저희 결혼해요!\n2023년 8월 19일 토요일 오후 1시 정각",
-      "tags": ["CC", "여름결혼"],
-      "createdAt": "2023-02-27"
+      "description": "2023년 8월 19일 토요일 오후 1시\n라마다 신도림 5층 세인트그레이스홀",
+      "tags": ["CC", "여름결혼🐋"],
+      "createdAt": "2023-05-19"
     },
     {
       "id": 2,
       "contents": [
         {
-          "imageSrc": "/assets/img/dress2_flowerhand_face_bg3.png",
+          "imageSrc": "/assets/img/EP2_5446-바른보정.jpg",
           "action": {
             "type": "link",
-            "text": "오시는 길",
+            "text": "지도에서 위치 확인하기",
             "color": "#f9b95e",
             "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
@@ -31,21 +55,10 @@
           }
         },
         {
-          "imageSrc": "/assets/img/dress2_chu.png",
+          "imageSrc": "/assets/img/EP2_5990-바른보정.jpg",
           "action": {
             "type": "link",
-            "text": "웨딩홀 오시는 길",
-            "color": "#f9b95e",
-            "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
-            "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
-            "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
-          }
-        },
-        {
-          "imageSrc": "/assets/img/dress2_wink_bg.png",
-          "action": {
-            "type": "link",
-            "text": "오시는 길",
+            "text": "지도에서 위치 확인하기",
             "color": "#f9b95e",
             "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
@@ -53,18 +66,18 @@
           }
         }
       ],
-      "description": "신도림 라마다호텔\n세인트그레이스홀(5F)",
-      "tags": ["주차", "한시간반", "무료"]
+      "description": "\n🚗주차         한시간 반 무료\n🚍전세버스  광주 비엔날레 주차장, 오전 8시 출발 (전남 72자3800)",
+      "tags": ["맛집베뉴", "식사하러오세요"]
     },
     {
       "id": 3,
       "contents": [
         {
-          "imageSrc": "/assets/img/dress2_flowerhand_face_bg3.png",
+          "imageSrc": "/assets/img/김혜진-앞 (20).jpg",
           "action": {
-            "type": "normal",
-            "text": "대절버스 타는곳",
-            "color": "#76bcfb",
+            "type": "bottom-sheet_account",
+            "text": "축의 계좌 정보",
+            "color": "#babd29",
             "href": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh",
             "mobileLink": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh",
             "pcLink": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh"
@@ -78,15 +91,15 @@
       "id": 4,
       "contents": [
         {
-          "imageSrc": "/assets/img/deco1.png",
+          "imageSrc": "/assets/img/SPI_8393.jpg",
           "action": {
-            "type": "bottom-sheet_account",
-            "text": "축의 계좌 정보",
-            "color": "#61be7a"
+            "type": "bottom-sheet_toss",
+            "color": "#3f4572",
+            "text": "토스로 축의하기"
           }
         }
       ],
-      "description": "내용설명"
+      "description": "귀한 시간 내셔서 걸음 해주시면 감사하겠습니다"
     }
   ]
 }
