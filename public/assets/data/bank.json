@@ -4,14 +4,14 @@
   "groom": [
     {
       "holderName": "전병도",
-      "bankName": "국민은행",
-      "accountNumber": "계좌번호",
-      "logo": "/assets/svg/kb.svg"
+      "bankName": "sc제일은행",
+      "accountNumber": "156-20-157722",
+      "logo": "/assets/svg/sc.png"
     },
     {
       "holderName": "이덕주",
       "bankName": "국민은행",
-      "accountNumber": "계좌번호",
+      "accountNumber": "992802-01-068771",
       "logo": "/assets/svg/kb.svg"
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "holderName": "박점남",
-      "bankName": "국맨은행",
+      "bankName": "국민은행",
       "accountNumber": "794601-01-038478",
       "logo": "/assets/svg/kb.svg"
     },
@@ -38,7 +38,7 @@
       "holderName": "김혜진",
       "bankName": "우리은행",
       "accountNumber": "1002-248-155926",
-      "logo": "/assets/svg/kakaobank.svg"
+      "logo": "/assets/svg/woori.png"
     }
   ]
 }

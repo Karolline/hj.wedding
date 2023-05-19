@@ -35,6 +35,7 @@ export function HighlightModal(props: any) {
     //   overflow-y: scroll;
     //   width: 100%;
     //   `;
+    window.scrollTo(0, 0);
 
       // effect 이후에 어떻게 정리(clean-up)할 것인지 표시
     return () => {
