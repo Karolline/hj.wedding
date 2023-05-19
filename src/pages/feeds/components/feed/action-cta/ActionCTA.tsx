@@ -9,6 +9,7 @@ type Props<ElementType extends keyof JSX.IntrinsicElements = 'div'> =
       as?: ElementType;
       backgroundColor: string;
       children: ReactNode;
+      isNormal: boolean;
     } & CSSProps;
 
 export function ActionCTA<ElementType extends keyof JSX.IntrinsicElements>({
@@ -16,6 +17,7 @@ export function ActionCTA<ElementType extends keyof JSX.IntrinsicElements>({
   backgroundColor,
   children,
   css,
+  isNormal,
   ...props
 }: Props<ElementType>) {
   const Component = styled(as ?? 'div', {}) as any;
@@ -38,7 +40,7 @@ export function ActionCTA<ElementType extends keyof JSX.IntrinsicElements>({
       {...props}
     >
       {children}
-      <ArrowRightIcon />
+      {!isNormal && <ArrowRightIcon /> }
     </Component>
   );
 }

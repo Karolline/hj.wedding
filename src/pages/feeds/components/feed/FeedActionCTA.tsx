@@ -6,6 +6,7 @@ import { TossTransferActionCTA } from '@pages/feeds/components/feed/action-cta/b
 import React from 'react';
 import {
   FeedAction,
+  노멀_액션인가,
   링크_액션인가,
   바텀싯_액션인가,
   팝업_액션인가,
@@ -20,6 +21,20 @@ export function FeedActionCTA({ action }: Props) {
   const isMobileWeb = useIsMobileWeb();
   const { showNotification } = useNotifications();
 
+  if (노멀_액션인가(action)) {
+    return (
+      <ActionCTA
+        as="button"
+        backgroundColor={action.color}
+        css={{ width: '100%' }}
+        type="button"
+        isNormal={true}
+      >
+        {action.text}
+      </ActionCTA>
+    );
+  }
+
   if (링크_액션인가(action)) {
     return (
       <ActionCTA
@@ -32,6 +47,7 @@ export function FeedActionCTA({ action }: Props) {
         }
         target="_blank"
         rel="noopener noreferrer"
+        isNormal={false}
       >
         {action.text}
       </ActionCTA>
@@ -45,6 +61,7 @@ export function FeedActionCTA({ action }: Props) {
         backgroundColor={action.color}
         css={{ width: '100%' }}
         type="button"
+        isNormal={false}
         onClick={() => {
           showNotification({
             element: <ToastWrapper>✅ {action.message}</ToastWrapper>,

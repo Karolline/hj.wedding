@@ -24,6 +24,11 @@ interface Action {
   color: string;
 }
 
+interface NormalAction extends Action {
+  type: 'normal';
+  href: never;
+}
+
 interface LinkAction extends Action {
   type: 'link';
   href: string;
@@ -44,7 +49,11 @@ interface BottomSheetAction extends Action {
   message: never;
 }
 
-export type FeedAction = LinkAction | PopupAction | BottomSheetAction | Action;
+export type FeedAction = NormalAction | LinkAction | PopupAction | BottomSheetAction | Action;
+
+export function 노멀_액션인가(action: FeedAction): action is NormalAction {
+  return action.type === 'normal';
+}
 
 export function 링크_액션인가(action: FeedAction): action is LinkAction {
   return action.type === 'link';
