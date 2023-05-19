@@ -10,6 +10,7 @@ export function Footer() {
         css={{ color: '$gray400', mt: '$4', textAlign: 'center' }}
       >
         @Copyright Jbee, Soso
+        and edited by Hyejin
       </Text>
     </StyledFooter>
   );
