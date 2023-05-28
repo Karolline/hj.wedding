@@ -37,13 +37,14 @@ export function HighlightModal(props: any) {
     //   overflow-y: scroll;
     //   width: 100%;
     //   `;
-    window.scrollTo(0, 0);
+
+    // window.scrollTo(0, 0);
 
       // effect 이후에 어떻게 정리(clean-up)할 것인지 표시
     return () => {
       // const scrollY = document.body.style.top;
       // document.body.style.cssText = "";
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
     };
   }, []);  // 빈 배열을 입력하는 경우 렌더링 될 때 마다 실행
 
