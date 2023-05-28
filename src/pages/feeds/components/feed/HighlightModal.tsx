@@ -12,6 +12,7 @@ import {
   useTransform,
 } from 'framer-motion';
 import CloseIcon from '@components/icon/Close';
+import { Flex } from '@components/util/layout/Flex';
 
 export function HighlightModal(props: any) {
   
@@ -24,7 +25,8 @@ export function HighlightModal(props: any) {
 
   const 표지_이미지_넘버 = getRandomNumberInRange({ min: 1, max: 6 });
   const 표지_이미지_소스 = '/assets/img/highlight_'+표지_이미지_넘버+'.png'
-  const 표지_이미지_블러 = `/_next/image?url=${표지_이미지_소스}&w=16&q=1` // 이건 next라서 SSR인가보다.. 배포하면 고정될려나?
+  const 표지_이미지_블러 = `/_next/image?url=${표지_이미지_소스}&w=16&q=1` // next image라 SSR인 듯
+
 
   // 스크롤 금지
   // useEffect: 리액트 컴포넌트가 랜더링 될 때마다 특정 작업을 수행하도록 설정할 수 있는 Hook
@@ -90,11 +92,15 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
             // transition={{ duration: 0.3 }}
             onClick = {handleModalVisible}
           >
-            <Image.Root>
-             {/* <SButton type="button"> x버튼 */}
-              {/* <CloseIcon /> */}
-              {/* </SButton>  */}
-              
+
+          <Flex.CenterVertical css={{ px: '$8' }}>
+            
+             <SButton type="button">
+               <CloseIcon />
+               </SButton> 
+          </Flex.CenterVertical>
+          
+          <Image.Root>  
               <Image width={520} height={780}
               // placeholder="blur"
               // blurDataURL={표지_이미지_블러} // backgroundImage를 blur로 하면 얘는 안하는게 자연스러움
@@ -119,7 +125,7 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
 }
 
 const StyledMotionDiv = styled(motion.div, {
-  marginTop: `calc(25vh - 136px)`,
+  marginTop: `calc(25vh - 150px)`,
   position: `absolute`,
   zIndex: '$max1',
 });
