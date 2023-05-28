@@ -11,6 +11,30 @@
 		"name": "하이라이트2",
 		"imageSrc": "/assets/img/highlight_2.png",
 		"theme": "dark"
+	  },
+	  {
+		"id": 3,
+		"name": "하이라이트3",
+		"imageSrc": "/assets/img/highlight_3.png",
+		"theme": "dark"
+	  },
+	  {
+		"id": 4,
+		"name": "하이라이트4",
+		"imageSrc": "/assets/img/highlight_4.png",
+		"theme": "dark"
+	  },
+	  {
+		"id": 5,
+		"name": "하이라이트5",
+		"imageSrc": "/assets/img/highlight_5.png",
+		"theme": "dark"
+	  },
+	  {
+		"id": 6,
+		"name": "하이라이트6",
+		"imageSrc": "/assets/img/highlight_6.png",
+		"theme": "dark"
 	  }
 	]
   }

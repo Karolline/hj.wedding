@@ -59,7 +59,7 @@ export function HighlightModal(props: any) {
           >
             <Image.Root>
               <Image {...대표_컨텐츠_이미지} width={520} height={780}>
-                <Image.Source src={대표_컨텐츠_이미지.img} alt="재여비" />
+                <Image.Source src={대표_컨텐츠_이미지} alt="재여비" />
               </Image>
             </Image.Root>
           </StyledMotionDiv>
@@ -185,7 +185,7 @@ export function HighlightModal(props: any) {
 // }
 
 const StyledMotionDiv = styled(motion.div, {
-  marginTop: `calc(25vh - 150px)`,
+  marginTop: `calc(25vh - 180px)`,
   position: `absolute`,
   zIndex: '$max1',
 });
