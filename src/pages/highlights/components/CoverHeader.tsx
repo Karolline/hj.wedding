@@ -28,8 +28,6 @@ export function CoverHeader({
 
         {/* {children} 계정이름 */}
 
-        <div>전상빈 김혜진</div>
-
         {/* x 버튼 */}
         <SButton type="button" onClick={onClose}>
           <CloseIcon />

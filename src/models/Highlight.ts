@@ -21,3 +21,17 @@ export interface RawHighlightData {
     imageSrc: string;
   }[];
 }
+
+export interface RawModalHighlightData {
+  id: number;
+  name: string;
+  imageSrc: string;
+  theme: string;
+}
+
+export interface modalHighlight {
+  id: number;
+  name: string;
+  image: NextImage;
+  theme: string;
+}

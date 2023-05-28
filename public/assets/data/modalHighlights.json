@@ -1,0 +1,17 @@
+{
+	"data": [
+	  {
+		"id": 1,
+		"name": "하이라이트1",
+		"imageSrc": "/assets/img/highlight_1.png",
+		"theme": "dark"
+	  },
+	  {
+		"id": 2,
+		"name": "하이라이트2",
+		"imageSrc": "/assets/img/highlight_2.png",
+		"theme": "dark"
+	  }
+	]
+  }
+  
