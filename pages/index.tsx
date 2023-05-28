@@ -1,5 +1,5 @@
 import { FeedEntity, RawFeedData } from '@models/Feed';
-import { Highlight, RawHighlightData, RawModalHighlightData } from '@models/Highlight';
+import { Highlight, RawHighlightData } from '@models/Highlight';
 import { Feed } from '@pages/feeds/components/feed/Feed';
 import { Footer } from '@pages/feeds/components/footer/Footer';
 import { Header } from '@pages/feeds/components/header/Header';
@@ -11,14 +11,12 @@ import React, { useState } from 'react';
 import { getRandomNumberInRange } from '@utils/getRandomNumberInRange';
 
 export async function getStaticProps() {
-  const [feedJson, highlightJson, modalHighlightJson] = await Promise.all([
+  const [feedJson, highlightJson] = await Promise.all([
     (await import('public/assets/data/feeds.json')).default,
     (await import('public/assets/data/highlights.json')).default,
-    (await import('public/assets/data/modalHighlights.json')).default,
   ]);
   const feedDataset = feedJson.data as RawFeedData[];
   const highlightDatdaset = highlightJson.data as RawHighlightData[];
-  const modalHighlightDataset = modalHighlightJson.data as RawModalHighlightData[];
 
   const feedsPromises = Promise.all(
     feedDataset.map(async feed => {
@@ -61,41 +59,26 @@ export async function getStaticProps() {
   //   })
   // );
 
-  const modalHighlightPromises = Promise.all(
-    modalHighlightDataset.map(async modalHighlight => {
-      const { base64, img} = await getPlaiceholder(
-        modalHighlight.imageSrc
-      )
-
-      return { ...modalHighlight, image: { ...img, blurDataURL: base64}};
-    })
-
-  )
-
   const [feeds] = await Promise.all([
     feedsPromises,
     // highlightPromises,
   ]);
 
-  const [modals] = await Promise.all([
-    modalHighlightPromises,
-  ])
-
-  return { props: { feeds, modals } };
+  return { props: { feeds } };
 } 
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 
 
-export default function FeedsPage({ feeds, modals }: Props) {
+export default function FeedsPage({ feeds }: Props) {
   const [modalOpen, setModalOpen] = useState(true);
 
   // console.log(imageProps)
 
   return (
     <>
-    { modalOpen && <HighlightModal modalOpen={modalOpen} setModalOpen={setModalOpen} modals={modals} /> }
+    { modalOpen && <HighlightModal modalOpen={modalOpen} setModalOpen={setModalOpen} /> }
 
     { !modalOpen && 
     <>
