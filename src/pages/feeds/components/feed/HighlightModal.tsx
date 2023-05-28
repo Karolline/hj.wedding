@@ -121,7 +121,7 @@ const StyledMotionDiv = styled(motion.div, {
 const StyledMotionWrapper = styled(motion.section, {
   backgroundColor: '$transparent',
 
-  height: '100vh',
+  // height: '100vh',
   // height: 'calc(var(--vh, 1vh) * 100',
 
   position: 'absolute',
