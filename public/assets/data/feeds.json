@@ -34,6 +34,22 @@
             "text": "저희 결혼해요💖",
             "color": "#ff9db7"
           }
+        },
+        {
+          "imageSrc": "/assets/img/EP2_4858-바른보정.jpg",
+          "action": {
+            "type": "normal",
+            "text": "저희 결혼해요💖",
+            "color": "#ff9db7"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/EP2_5446-바른보정.jpg",
+          "action": {
+            "type": "normal",
+            "text": "저희 결혼해요💖",
+            "color": "#ff9db7"
+          }
         }
       ],
       "description": "2023년 8월 19일 토요일 오후 1시\n라마다 신도림 5층 세인트그레이스홀",
@@ -44,62 +60,90 @@
       "id": 2,
       "contents": [
         {
-          "imageSrc": "/assets/img/EP2_5446-바른보정.jpg",
+          "imageSrc": "/assets/img/230419 호시절 김혜진 (359).png",
           "action": {
             "type": "link",
             "text": "지도에서 위치 확인하기",
-            "color": "#f9b95e",
+            "color": "#babd29",
             "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
           }
         },
         {
-          "imageSrc": "/assets/img/EP2_5990-바른보정.jpg",
+          "imageSrc": "/assets/img/230419 호시절 김혜진 (29).png",
           "action": {
             "type": "link",
             "text": "지도에서 위치 확인하기",
-            "color": "#f9b95e",
+            "color": "#babd29",
+            "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/JOY03080.jpg",
+          "action": {
+            "type": "link",
+            "text": "지도에서 위치 확인하기",
+            "color": "#babd29",
+            "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/230419 호시절 김혜진 (622).png",
+          "action": {
+            "type": "link",
+            "text": "지도에서 위치 확인하기",
+            "color": "#babd29",
             "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
             "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
           }
         }
       ],
-      "description": "\n🚗주차          한시간 반 무료\n🚍전세버스  광주 비엔날레 주차장, 오전 8시 출발 (전남 72자3800)",
+      "description": "주차는 한시간 반 무료로,\n'서울특별시 구로구 신도림동 427-3' 찍고 오시면 됩니다.\n",
       "tags": ["맛집베뉴", "식사하러오세요"]
     },
     {
       "id": 3,
       "contents": [
         {
-          "imageSrc": "/assets/img/김혜진-앞 (20).jpg",
+          "imageSrc": "/assets/img/230419 호시절 김혜진 (940).png",
           "action": {
             "type": "bottom-sheet_account",
             "text": "축의 계좌 정보",
-            "color": "#babd29",
-            "href": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh",
-            "mobileLink": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh",
-            "pcLink": "https://map.naver.com/v5/entry/place/16313066?c=15,0,0,0,dh"
+            "color": "#3f4572"
           }
-        }
-      ],
-      "description": "광주 비엔날레 주차장, 08시 정각",
-      "tags": ["전남", "72자3800"]
-    },
-    {
-      "id": 4,
-      "contents": [
+        },
+        {
+          "imageSrc": "/assets/img/JOY03397-1.jpg",
+          "action": {
+            "type": "bottom-sheet_account",
+            "text": "축의 계좌 정보",
+            "color": "#3f4572"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/JOY03397-1.jpg",
+          "action": {
+            "type": "bottom-sheet_account",
+            "text": "축의 계좌 정보",
+            "color": "#3f4572"
+          }
+        },
         {
           "imageSrc": "/assets/img/SPI_8393.jpg",
           "action": {
-            "type": "bottom-sheet_toss",
-            "color": "#3f4572",
-            "text": "토스로 축의하기"
+            "type": "bottom-sheet_account",
+            "text": "축의 계좌 정보",
+            "color": "#3f4572"
           }
         }
       ],
-      "description": "귀한 시간 내셔서 걸음 해주시면 감사하겠습니다"
+      "description": "귀한 시간 내셔서 자리 해주시면 감사하겠습니다"
     }
   ]
 }

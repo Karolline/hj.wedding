@@ -23,9 +23,9 @@ export function HighlightModal(props: any) {
     setModalOpen(!modalOpen)
   }
 
-  const 표지_이미지_넘버 = getRandomNumberInRange({ min: 1, max: 6 });
+  const 표지_이미지_넘버 = getRandomNumberInRange({ min: 1, max: 4 });
   const 표지_이미지_소스 = '/assets/img/highlight_'+표지_이미지_넘버+'.png'
-  const 표지_이미지_블러 = `/_next/image?url=${표지_이미지_소스}&w=16&q=1` // next image라 SSR인 듯
+  // const 표지_이미지_블러 = `/_next/image?url=${표지_이미지_소스}&w=16&q=1` // next image라 SSR인 듯
 
   // function setScreenSize() {
   //   document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
@@ -68,7 +68,7 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
       <BackgroundMotionDiv
           style={{
             scale,
-            backgroundImage: `url(${표지_이미지_블러})`,
+            // backgroundImage: `url(${표지_이미지_블러})`,
             width: '100%',
           }}
         >
