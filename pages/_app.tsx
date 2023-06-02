@@ -43,13 +43,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           site_name: og.sitename,
           images: [
             {
-              url: '/assets/img/deco2.JPG',
+              url: '/assets/img/230419 호시절 김혜진 (972) - small.png',
               width: 1200,
               height: 630,
               alt: og.title,
             },
             {
-              url: '/assets/img/deco2.JPG',
+              url: '/assets/img/230419 호시절 김혜진 (972) - small.png',
               width: 800,
               height: 418,
               alt: og.title,
