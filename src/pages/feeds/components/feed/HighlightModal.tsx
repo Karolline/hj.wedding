@@ -31,9 +31,13 @@ export function HighlightModal(props: any) {
   //   document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
   // }
 
-  // useEffect(() => {
+  useEffect(() => {
   //   setScreenSize();
-  // });
+
+  let timer = setTimeout(() => {
+    handleModalVisible()
+  }, 9000)
+  });
 
 
 /* Prop `style` did not match
@@ -81,12 +85,13 @@ const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5]);
             onClick = {handleModalVisible}
           >
 
-          <Flex.CenterVertical css={{ px: '$8', py: '$4'}}>
+          {/* x버튼 */}
+          {/* <Flex.CenterVertical css={{ px: '$8', py: '$4'}}>
             
              <SButton type="button">
                <CloseIcon />
                </SButton> 
-          </Flex.CenterVertical>
+          </Flex.CenterVertical> */}
           
           <Image.Root>  
               <Image width={520} height={780}
