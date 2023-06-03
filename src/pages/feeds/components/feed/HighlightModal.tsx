@@ -34,7 +34,7 @@ export function HighlightModal(props: any) {
   useEffect(() => {
   //   setScreenSize();
 
-  let timer = setTimeout(() => {
+  const timer = setTimeout(() => {
     handleModalVisible()
   }, 9000)
   });
