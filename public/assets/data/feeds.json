@@ -12,7 +12,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/EP2_2350-바른보정.jpg",
+          "imageSrc": "/assets/img/EP2_2350-바른보정-배경밝게.jpg",
           "action": {
             "type": "normal",
             "text": "저희 결혼해요💖",
@@ -20,7 +20,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/김헤진님-6-에픽유보정.jpg",
+          "imageSrc": "/assets/img/김헤진님-6-에픽유보정-배경밝게.jpg",
           "action": {
             "type": "normal",
             "text": "저희 결혼해요💖",
@@ -36,7 +36,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/EP2_4858-바른보정.jpg",
+          "imageSrc": "/assets/img/EP2_5117.jpg",
           "action": {
             "type": "normal",
             "text": "저희 결혼해요💖",
@@ -82,6 +82,17 @@
           }
         },
         {
+          "imageSrc": "/assets/img/230419 호시절 김혜진 (702).png",
+          "action": {
+            "type": "link",
+            "text": "지도에서 위치 확인하기",
+            "color": "#babd29",
+            "href": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "mobileLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh",
+            "pcLink": "https://map.naver.com/v5/entry/place/1080713347?c=15,0,0,0,dh"
+          }
+        },
+        {
           "imageSrc": "/assets/img/JOY03080.jpg",
           "action": {
             "type": "link",
@@ -93,7 +104,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/230419 호시절 김혜진 (622).png",
+          "imageSrc": "/assets/img/230419 호시절 김혜진 (622)-높이2800.png",
           "action": {
             "type": "link",
             "text": "지도에서 위치 확인하기",
@@ -120,14 +131,6 @@
         },
         {
           "imageSrc": "/assets/img/JOY03397-1.jpg",
-          "action": {
-            "type": "bottom-sheet_account",
-            "text": "축의 계좌 정보",
-            "color": "#3f4572"
-          }
-        },
-        {
-          "imageSrc": "/assets/img/SPI_8345.jpg",
           "action": {
             "type": "bottom-sheet_account",
             "text": "축의 계좌 정보",
