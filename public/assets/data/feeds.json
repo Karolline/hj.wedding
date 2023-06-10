@@ -36,14 +36,6 @@
           }
         },
         {
-          "imageSrc": "/assets/img/EP2_5117.jpg",
-          "action": {
-            "type": "normal",
-            "text": "저희 결혼해요💖",
-            "color": "#ff9db7"
-          }
-        },
-        {
           "imageSrc": "/assets/img/barun-EP2_4848-1.jpg",
           "action": {
             "type": "normal",
