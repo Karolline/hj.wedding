@@ -36,7 +36,7 @@ export function HighlightModal(props: any) {
 
   const timer = setTimeout(() => {
     handleModalVisible()
-  }, 9000)
+  }, 6000)
   });
 
 
