@@ -115,7 +115,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/barun-JOY03172-필수-12.jpg",
+          "imageSrc": "/assets/img/JOY03172-필수-12.jpg",
           "action": {
             "type": "link",
             "text": "지도에서 위치 확인하기",
@@ -149,7 +149,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/barun-230419호시절김혜진[1047]-222.jpg",
+          "imageSrc": "/assets/img/230419호시절김혜진[1047]-222.jpg",
           "action": {
             "type": "bottom-sheet_account",
             "text": "축의 계좌 정보",
