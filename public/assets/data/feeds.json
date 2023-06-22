@@ -60,7 +60,7 @@
       "id": 2,
       "contents": [
         {
-          "imageSrc": "/assets/img/230419 호시절 김혜진 (359).png",
+          "imageSrc": "/assets/img/230419-호시절-김혜진-(359).jpg",
           "action": {
             "type": "link",
             "text": "지도에서 위치 확인하기",
@@ -71,7 +71,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/230419 호시절 김혜진 (29).png",
+          "imageSrc": "/assets/img/230419-호시절-김혜진-(29).jpg",
           "action": {
             "type": "link",
             "text": "지도에서 위치 확인하기",
@@ -149,7 +149,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/230419호시절김혜진[1047]-222.jpg",
+          "imageSrc": "/assets/img/230419-호시절-김혜진-(1047).jpg",
           "action": {
             "type": "bottom-sheet_account",
             "text": "축의 계좌 정보",
