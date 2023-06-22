@@ -93,7 +93,7 @@
           }
         },
         {
-          "imageSrc": "/assets/img/JOY03080.jpg",
+          "imageSrc": "/assets/img/JOY03080-1.jpg",
           "action": {
             "type": "link",
             "text": "지도에서 위치 확인하기",
@@ -142,6 +142,14 @@
         },
         {
           "imageSrc": "/assets/img/JOY03397-1.jpg",
+          "action": {
+            "type": "bottom-sheet_account",
+            "text": "축의 계좌 정보",
+            "color": "#3f4572"
+          }
+        },
+        {
+          "imageSrc": "/assets/img/230419-호시절-김혜진-(1122).jpg",
           "action": {
             "type": "bottom-sheet_account",
             "text": "축의 계좌 정보",
